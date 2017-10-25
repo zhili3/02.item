@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>电器</title>
+    <script>
+        document.querySelector("html").style.fontSize = window.screen.width / 20 + "px";
+        window.onresize = function(){
+            document.querySelector("html").style.fontSize = window.screen.width / 20 + "px";
+        } 
+    </script>
+    <link rel="stylesheet" href="css/lib/mui.min.css">
+   
+    <link rel="stylesheet" type="" href="css/home.css">
+    <link rel="stylesheet" type="" href="css/electrical.css">
+    <!-- <script src="js/lib/jquery-1.12.4.js"></script> -->
+    
+</head>
+<body>
+    <div class="header">
+        <span class="iconfont">&#xe697;</span>
+        <b class="iconfont">&#xe6ac;</b>
+    </div>
+    <div class="ad">
+            <div id="slider" class="mui-slider" >
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="image/yuantiao.jpg"  >
+                            </a>
+                        </div>
+                        <!-- 第一张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="image/shuijiao.jpg" data-preview-src="" data-preview-group="1">
+                            </a>
+                        </div>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="image/muwu.jpg" data-preview-src="" data-preview-group="1">
+                            </a>
+                        </div>
+                        <!-- 第三张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="image/cbd.jpg" data-preview-src="" data-preview-group="1">
+                            </a>
+                        </div>
+                        <!-- 第四张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="image/yuantiao.jpg" data-preview-src="" data-preview-group="1">
+                            </a>
+                        </div>
+                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="image/shuijiao.jpg"  >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                        <div class="mui-indicator"></div>
+                    </div>
+            </div>
+    </div>
+    <div class="middle">
+        <div class="refrigerator">
+            <ul>
+                <li>冰箱</li>
+                <li>洗衣机</li>
+                <li>电视</li>
+                <li>空调</li>
+                <li>彩电</li>
+                <li>热水器</li>
+                <li>厨房电器</li>
+                <li>电扇</li>
+                <li>电饭煲</li>
+                <li>电磁炉</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="js/lib/mui.min.js"></script>
+<script src="js/lib/mui.zoom.js"></script>
+<script src="js/lib/mui.previewimage.js"></script>
+<script src="js/electrical.js"></script>
+</html>
